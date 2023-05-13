@@ -1,0 +1,278 @@
+* {
+    box-sizing: border-box;
+}
+::-webkit-scrollbar {
+    width: 7px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #062D28; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #42877e; 
+  }
+  
+
+.maincontainer {
+    height: 300px;
+    width: 25%;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin: auto;
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.chatting{
+    overflow: scroll;
+    overflow-x: hidden; 
+}
+
+/* HEADER BEGINS */
+.header {
+    position: relative;
+    width: 100%;
+    background-color: #062D28;
+    height: 50px;
+    border-radius: 20px 20px 10px 10px;
+}
+
+.bicon {
+    background: none;
+    border: none;
+    position: relative;
+    top: 30%;
+    cursor: pointer;
+}
+
+svg {
+    color: white;
+}
+
+.dp {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    left: 30px;
+    top: 9px;
+    background: #D8D8D8;
+}
+
+.odot {
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    left: 52px;
+    top: 32px;
+    background: #80EA4E;
+}
+
+.recname {
+    position: absolute;
+    height: 14px;
+    left: 29%;
+    width: 44%;
+    right: 58.62%;
+    top: calc(-17% - 14px/2 + 12.5px);
+}
+
+.rn1 {
+    font-family: 'ABeeZee';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 1px;
+    color: #FFFFFF;
+}
+
+.active {
+    font-family: 'ABeeZee';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 0px;
+    letter-spacing: 1px;
+    color: #FFFFFF;
+}
+
+.calling {
+    position: absolute;
+    left: 75%;
+}
+
+/* HEADER ENDS */
+
+
+/* CHATTING STARTS */
+.chatting {
+    position: relative;
+    height: 196px;
+}
+
+.day1 {
+    position: relative;
+    font-family: 'ABeeZee';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 35px;
+    text-align: center;
+    letter-spacing: 1px;
+    color: #1E2022;
+}
+
+/* MESSAGE1 STARTS */
+.smsg p {
+    font-family: 'ABeeZee';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    color: #77838F;
+    position: relative;
+    left: 6%;
+    bottom: 6%;
+}
+
+.sms {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.sdp {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background: #D8D8D8;
+}
+
+.smsg {
+    background: #EFEEF4;
+    border-radius: 0px 24px 24px 24px;
+}
+
+#smsg1 {
+    height: 68px;
+    width: 187px;
+}
+
+.time {
+    font-family: 'ABeeZee';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 63px;
+    letter-spacing: 0.8px;
+    color: #77838F;
+}
+
+/* MESSAGE1 ENDS */
+
+/* MEESAGE2 STARTS */
+#sms2 {
+    position: relative;
+    top: 2%;
+}
+
+#rmsg1 {
+    height: 65px;
+    width: 214px;
+}
+
+.rmsg p {
+    position: relative;
+    color: #FFFFFF;
+    left: 5%;
+    font-size: 14px;
+}
+
+.rmsg {
+    background: #00C987;
+    border-radius: 16px 16px 0px 16px;
+}
+
+/* MEESAGE2 ENDS */
+
+/* SEND MESSAGE BOX STARTS */
+.sendmess {
+    position: relative;
+    width: 239px;
+    height: 41px;
+    left: 14px;
+    top: 2%;
+    /* border: 2px solid black; */
+    background: #FFFFFF;
+    box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.05);
+    border-radius: 24px;
+}
+
+.type {
+    position: relative;
+    top: 18%;
+    width: 158px;
+    border-right: 1px solid #B6B7B8;
+}
+
+.type input {
+    font-family: 'ABeeZee';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.175px;
+    color: #B6B7B8;
+    border: none;
+    width: 112px;
+}
+
+input::placeholder {
+    font-family: 'ABeeZee';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.175px;
+    color: #B6B7B8;
+}
+input:focus{
+    outline: none;
+}
+.sendmsg{
+    position: relative;
+    left: 72%;
+    bottom: 32%;
+}
+.file svg {
+    color: #D3D4D6;
+    transform: rotate(35deg);
+}
+
+.microphone svg {
+    color: #55ACEE;
+}
+
+.sending svg {
+    color: #00C987;
+}
+
+/* SEND MESSAGE BOX ENDS */
+
+/* CHATTING ENDS */
