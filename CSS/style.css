@@ -36,10 +36,6 @@ button {
     border: none;
     cursor: pointer;
 }
-.chatting{
-    overflow: scroll;
-    overflow-x: hidden; 
-}
 
 /* HEADER BEGINS */
 .header {
@@ -123,6 +119,8 @@ svg {
 .chatting {
     position: relative;
     height: 196px;
+    overflow: scroll;
+    overflow-x: hidden; 
 }
 
 .day1 {
